@@ -19,21 +19,6 @@ public class HomeController : Controller
         List<string> testList=new List<string>{"test"};
         Console.WriteLine(testList);
 
-            int[] numbers = new int[5];
-            int sum = 0;
-
-            // An empty loop, which is a code smell
-            for (int i = 0; i < numbers.Length; i++)
-            {
-            }
-
-            // Unused variable, which is a code smell
-            int unusedVariable = 42;
-
-            // Redundant assignment, which is a code smell
-            int result = 0;
-            result = DoSomething();
-
          try
             {
                 // Empty catch block, which is a bug
