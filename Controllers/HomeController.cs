@@ -18,17 +18,6 @@ public class HomeController : Controller
     {
         List<string> testList=new List<string>{"test"};
         Console.WriteLine(testList);
-
-         try
-            {
-                // Empty catch block, which is a bug
-                int x = 0;
-                int y = 10 / x;
-                return y;
-            }
-            catch (DivideByZeroException)
-            {
-            }
         return View();
     }
 
