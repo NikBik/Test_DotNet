@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Test_REPO.Models;
+using System;
 
 namespace Test_REPO.Controllers;
 
@@ -15,6 +16,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        List<string> testList=new List<string>{"test"};
+        Console.WriteLine(testList);
         return View();
     }
 
